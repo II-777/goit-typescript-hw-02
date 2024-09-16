@@ -13,13 +13,8 @@ import SearchBar from '../SearchBar/SearchBar';
 // API Logic
 import { fetchImages, IMAGES_PER_PAGE } from '../../services/api';
 
-// Define the type for image
-interface UnsplashImage {
-  id: string;
-  urls: {
-    regular: string;
-  };
-}
+// Shared Type Definition
+import { UnsplashImage } from '../../types/UnsplashImage';
 
 // Define the types for the state
 interface AppState {
